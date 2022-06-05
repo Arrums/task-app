@@ -1,0 +1,51 @@
+.InputBox {
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	padding: 1.275rem 1.875rem;
+	font-size: 1.5rem;
+	line-height: 1.4em;
+	border: none;
+	transition: all 0.4s ease;
+	background: rgba(0, 0, 0, 0.003);
+	box-shadow: inset 0 -2px 1px rgb(0 0 0 / 3%);
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0.625rem 62.5rem rgba(0, 0, 0, 0.5);
+	}
+
+	&::placeholder {
+		font-style: italic;
+		font-weight: 300;
+		color: #bbb;
+	}
+
+	@media screen and (max-width: 800px) {
+		width: 95%;
+	}
+
+	// &__Submit {
+	// 	position: relative;
+	// 	width: 3.2rem;
+	// 	height: 3.2rem;
+	// 	margin: 0.75rem;
+	// 	border-radius: 3rem;
+	// 	// right: 0;
+	// 	border: none;
+	// 	font-size: 1rem;
+	// 	color: white;
+	// 	background-color: #4e54c8;
+	// 	transition: all 0.4s ease;
+	// 	box-shadow: 0 0 0.625rem #aaa;
+
+	// 	&:hover {
+	// 		background-color: #4e54c8;
+	// 	}
+
+	// 	&:active {
+	// 		transform: scale(0.9);
+	// 		box-shadow: 0 0 0.313rem #aaa;
+	// 	}
+	// }
+}

@@ -1,0 +1,36 @@
+.ToDoFilter {
+	margin-bottom: 2.5rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	list-style-type: none;
+	display: flex;
+	padding-left: 1.5rem;
+
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	> li:not(:first-child) {
+		margin-left: 1rem;
+	}
+
+	> li:not(:first-child)::before {
+		padding-right: 1rem;
+		content: "/";
+	}
+
+	&__Active {
+		color: black;
+	}
+
+	@media screen and (max-width: 800px) {
+		margin-bottom: 3.5rem;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: darkgray;
+}
